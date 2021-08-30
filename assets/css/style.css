@@ -61,9 +61,6 @@ div.container{
     margin:0 auto;
 }
 /* GERAL */
-.hidden{
-    display: none;
-}
 /* HTML */
 html{}
 /* HTML */
@@ -84,9 +81,8 @@ body{}
     width: 100vw;
     height: 20vh;
 }
-.large-container .menu{
+.large-container .menu{}
 
-}
 .large-container figure img{
     margin: 10px;
     height: 70px;

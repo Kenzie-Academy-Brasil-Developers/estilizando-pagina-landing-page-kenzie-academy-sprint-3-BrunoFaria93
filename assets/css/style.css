@@ -43,8 +43,13 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     font-family: sans-serif;
     list-style: none;
 }
+/*Deixas as legendas da figure invisiveis*/
+figcaption{
+    display: none;
+}
+
 img{
-    max-width: 800px;
+    max-width: 400px;
 }
 div.flex{
     display: flex;
@@ -64,6 +69,10 @@ div.container{
     max-width: 1140px;
     margin:0 auto;
 }
+.inicial{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 /* GERAL */
@@ -78,10 +87,9 @@ div.container{
 
 .secaoDestaque h2{
     
-    font-size: 43px;
+    font-size: 40px;
     text-align: center;
-    margin-left: 20px;
-
+    
 }
 
 .secaoDestaque p{
@@ -95,24 +103,20 @@ div.container{
     justify-content: center;
     padding: 20px;
     
-
-    
 }
 
 .secaoDestaqueFormulario input{
     padding: 15px;
-    width: 50vw;
+    width: 70vw;
     height: 4vh;
     border:none;
-   
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
     align-items: stretch;
     border-right: none;
-    height: 38px;
-    
-    
+    height: 38px;  
 }
+
 
 
 
@@ -126,8 +130,6 @@ div.container{
     font-size: 14px;
     border-left: none;
     height: 38px;
-    
-
 }
 
 

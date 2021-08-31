@@ -68,6 +68,7 @@ img{
 }
 div.flex{
      display: flex;
+     flex-direction: column;
 }
 div.full-container{
      width: 100%;
@@ -195,6 +196,7 @@ div.container{
 
 .secaoCursos{
     display: flex;
+    margin: 0 auto;
 }
 
 .secaoCursos img{
@@ -208,7 +210,7 @@ div.container{
     
 }
 
-.secaoCursos h2{
+.secaoCursos h2,h3{
      text-align: center;
      padding-top: 20px;
      padding-bottom: 20px;
@@ -218,8 +220,6 @@ div.container{
 
 .secaoCursos p{
     text-align: center;
-    line-height: 20px;
-    margin-left: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
     
@@ -234,13 +234,37 @@ div.container{
     
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
 }
 
+.flex-col-contato{
+    display: flex;
+    margin: 0 auto;
+    
+}
 
+.secaoContato-informacoes{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 50px;
+}
 
+.secaoContato-informacoes p{
+    padding: 10px;
+    width: 220px;
+    margin: 0 auto;
+    margin-left: 15px;
+    
+    
+}
 
-
+.secaoContato{
+    margin: 0 auto;
+    
+}
 
 
 /* HTML */

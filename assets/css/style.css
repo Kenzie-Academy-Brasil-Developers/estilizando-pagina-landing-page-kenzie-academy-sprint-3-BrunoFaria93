@@ -170,6 +170,35 @@ div.container{
      padding-bottom: 5px;
 
 }
+
+.secaoCursos{
+     display: flex;
+     margin: 0 auto;
+}
+
+.secaoCursos img{
+     width: 200px;
+
+}
+.secaoCursos article{
+    
+
+}
+
+.secaoCursos ul{
+    
+    
+}
+.secaoCursos h2{
+    
+    
+} 
+
+.secaoCursos p{
+    
+    
+}
+
 /* HTML */
 html{}
 /* HTML */

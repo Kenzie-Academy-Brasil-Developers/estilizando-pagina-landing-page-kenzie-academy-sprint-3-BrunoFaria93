@@ -35,84 +35,93 @@ family=Lato -> Títulos, textos
     --letra:#FFFFFF ;
 }
   
-/* GERAL */
-html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    list-style: none;
-}
-img{
-    max-width: 800px;
-}
-div.flex{
+main{
     display: flex;
 }
+/* GERAL */
+html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: sans-serif;
+     list-style: none;
+}
+figcaption{
+     display: none;
+}
+/*Deixas as legendas da figure invisiveis*/
+figcaption{
+    display: none;
+}
+
+img{
+     max-width: 800px;
+}
+div.flex{
+     display: flex;
+}
 div.full-container{
-    width: 100%;
-    max-width: 1850px;
-    margin:0 auto;
+     width: 100%;
+     max-width: 1850px;
+     margin:0 auto;
 }
 div.large-container{
-    width: 100%;
-    max-width: 1170px;
-    margin:0 auto;
+     width: 100%;
+     max-width: 1170px;
+     margin:0 auto;
 }
 div.container{
-    width: 100%;
-    max-width: 1140px;
-    margin:0 auto;
+     width: 100%;
+     max-width: 1140px;
+     margin:0 auto;
+}
+.inicial{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
 /* GERAL */
 
 .secaoDestaque{
-    padding: 20px;
-    color:var(--letra);
-    width: 100vw;
-    height: 40vh;
-    background-color:var(--fundo);
+     padding: 20px;
+     color:var(--letra);
+     width: 100vw;
+     height: 40vh;
+     background-color:var(--fundo);
 }
 
 .secaoDestaque h2{
     
-    font-size: 43px;
+    font-size: 40px;
     text-align: center;
-    margin-left: 20px;
-
 }
 
 .secaoDestaque p{
-    padding: 10px;
-    text-align: center;
-    font-size: 21px;
+     padding: 10px;
+     text-align: center;
+     font-size: 21px;
 }
 
 .secaoDestaqueFormulario{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    
-
-    
+     display: flex;
+     justify-content: center;
+     padding: 20px;    
 }
 
 .secaoDestaqueFormulario input{
+
     padding: 15px;
-    width: 50vw;
+    width: 70vw;
     height: 4vh;
     border:none;
-   
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
     align-items: stretch;
     border-right: none;
-    height: 38px;
-    
-    
+    height: 38px;  
 }
+
 
 
 
@@ -126,15 +135,41 @@ div.container{
     font-size: 14px;
     border-left: none;
     height: 38px;
+}
+
+.flex-col-js img{
+     width: 140px;
+     padding-top: 15vh;
+     padding-bottom: 20px;
     
-
 }
 
 
-.hidden{
-    display: none;
+.flex-col-js{
+    
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+     background-color: #818181;
+     padding-bottom: -20px;
 }
+.flex-col-js h2{
+     text-align: center;
+     width: 200px;
+     display: flex;
+     
+     padding-bottom: 50px;
+}
+.flex-col-js ul{
+     list-style: disc ;
+     width: 200px;
+     padding-bottom: 10px;
+     color: #303030;
+}
+.flex-col-js li{
+     padding-bottom: 5px;
 
+}
 /* HTML */
 html{}
 /* HTML */
@@ -188,8 +223,8 @@ figure figcaption{
 .topo{
     background-color: #00043e;
     color: white;
-    margin-top: 100px;
-    width: 100vw;
+    margin-top:100px;
+    width:100vw;
 }
 .large-container{
     display: flex;

@@ -308,34 +308,67 @@ label span:nth-child(3){
 }
 /* Secao Calendario */
 .secaoCalendar{
-    margin: 10px;
-    margin-top: 50px;
     text-align: center;
     margin: 0 auto;
 }
 .secaoCalendar h2{
-
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .secaoCalendar p{
-    margin-top: 40px;
-    margin-bottom: 40px;
+    max-width: 160px;
+    margin: 0 auto;
 }
 .calendario{
-    
-    width: 200px;
+    max-width: 250px;
+}
+.calendario li{
     border: 1px solid black;
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.calendario h3{
+    font-size: 19px;
+    padding: 42px 0px;
+    font-weight: lighter;
+}
+.calendario p{
+    color: #818181;
+    font-size: 15px;
+    margin: 10px;
+    margin-bottom: 25px;
 }
 .calendario-data{
-    padding: 0px 0px;
-}
-.calendario li span{
-    padding: 0px 0px;
+    font-size: 36px;
+    padding: 22px 29px;
+    padding-left: 45px;
     background-color: var(--fundo);
-    color:var(--letra);
+    color: var(--letra);
+}
+
+.calendario-data-rodape{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0px;
+    border-top: 1px solid #81818177;
 }
 .calendario-data-rodape span{
-    
+    margin-bottom: 10px;
+    font-size: 32px;
+    color: #818181;
+}
+
+.calendario-data-rodape button{
+    font-size: 32px;
+    border: none;
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    color: var(--letra);
+    background-color: var(--azul-c);
+    border-radius: 5px;
 }
 
 /* HEADER */

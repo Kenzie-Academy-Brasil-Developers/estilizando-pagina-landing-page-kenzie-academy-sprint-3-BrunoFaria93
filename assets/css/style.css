@@ -392,8 +392,6 @@ footer p {
     padding: 14px 18px
 }
 
-
-
 /* FOOTER */
 
 /* INICIAL */
@@ -417,5 +415,12 @@ main{}
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {}
   
-    @media screen and (min-width: 800px) {}
+    @media screen and (min-width: 800px) {
+        .topo{
+            background-color: var(--fundo);
+            color: white;
+            margin-top:100px;
+            width:100vw;
+        }
+    }
 /* MEDIA QUERIES */

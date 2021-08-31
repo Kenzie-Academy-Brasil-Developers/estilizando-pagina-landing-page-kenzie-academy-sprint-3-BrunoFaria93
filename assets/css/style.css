@@ -33,6 +33,7 @@ family=Lato -> Títulos, textos
     --azul-c:#007aff;
     --fundo:#00043e;
     --letra:#FFFFFF ;
+    --letra-cinza:#d3cdcd;
 }
   
 main{
@@ -237,11 +238,6 @@ div.container{
     align-items: center;
 }
 
-.flex-col-contato{
-    display: flex;
-    margin: 0 auto;
-    
-}
 
 .secaoContato-informacoes{
    
@@ -254,16 +250,75 @@ div.container{
 
 .secaoContato-informacoes p{
     padding: 10px;
-    width: 220px;
     margin: 0 auto;
-    margin-left: 15px;
+    margin-left: 10px;
+}
+
+.secaoContato-informacoes h2{
+    text-transform: uppercase;
+
+}
+.paragrafo{
+    width: 220px;
+    color: var(--letra-cinza);
+}
+
+.secaoContato a:link{
+    color:var(--letra-cinza);
+}
+
+.secaoContato a:visited{
+    color:var(--letra-cinza);
+}
+.secaoContato i{
+    color: var(--letra-cinza);
     
+    margin: 10px 10px ;
     
 }
 
 .secaoContato{
     margin: 0 auto;
+    width: 100vw;
+    background-color: #818181;
+    margin-top: 80px;
+}
+
+.flex-col-contato{
+
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 50px;
     
+}
+.flex-col-contato label{
+    
+    display: none;
+}
+
+.form-input-model{
+        border-radius: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;  
+}
+.form-input-model input{
+        border-radius: 5px;
+        height: 30px ;
+        padding: 10px;
+}
+.areaTxt{
+    padding: 10px;
+    border-radius: 5px;
+    width: 201px;
+    height: 100px;
+
+}
+
+.enviar{
+    border-radius: 5px;
+    float: right;
+    width: 50px;
+    height: 35px;
 }
 
 

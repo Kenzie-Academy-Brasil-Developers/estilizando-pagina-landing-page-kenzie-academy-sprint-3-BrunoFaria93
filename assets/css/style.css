@@ -35,6 +35,9 @@ family=Lato -> Títulos, textos
     --letra:#FFFFFF ;
 }
   
+main{
+    display: flex;
+}
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
      margin: 0;

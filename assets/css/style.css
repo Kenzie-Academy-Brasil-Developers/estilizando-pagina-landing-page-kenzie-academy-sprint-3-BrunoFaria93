@@ -592,5 +592,68 @@ main{}
         .flex-col-js{
             width: 50%;
         }
+
+        /* CALENDARIO */
+
+        .secaoCalendar{
+            width: 100vw;
+            flex-direction: column;
+        }
+        .calendario{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 170px;
+            }
+        .calendario li{
+            border: 1px solid black;
+            flex-direction: column;
+            justify-content: center;
+            
+            
+        }
+        .calendario h3{
+            font-size: 19px;
+            padding: 42px 0px;
+            font-weight: lighter;
+        }
+        .calendario li p{
+            padding: 0px;
+            max-width: 300px;
+            color: #818181;
+            margin: 0 auto;
+            margin-bottom: 55px;
+        }
+        .calendario-data{
+            font-size: 36px;
+            padding: 30px 180px;
+            background-color: var(--fundo);
+            color: var(--letra);
+        }
+        
+        .calendario-data-rodape{
+            display: flex;
+            flex-direction: column;
+            padding: 25px 0px;
+            border-top: 1px solid #81818177;
+        }
+        .calendario-data-rodape span{
+            margin-bottom: 30px;
+            font-size: 32px;
+            color: #818181;
+        }
+        
+        .calendario-data-rodape button{
+            font-size: 32px;
+            border: none;
+            width: 30%;
+            height: 55px;
+            margin: 0 auto;
+            border-radius: 5px;
+        }
+        .calendario_topo{
+            width: 100vw;
+            display: flex;
+        }
+
     }
 /* MEDIA QUERIES */

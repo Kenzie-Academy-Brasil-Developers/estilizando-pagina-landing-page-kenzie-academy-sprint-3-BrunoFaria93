@@ -47,9 +47,9 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
      list-style: none;
 
 }
-figcaption{
-     display: none;
-}
+    figcaption{
+        display: none;
+    }
 /*Deixas as legendas da figure invisiveis*/
 figcaption{
     display: none;
@@ -190,6 +190,9 @@ div.container{
 
 }
 
+
+
+
 .secaoCursos{
     display: flex;
     margin: 0 auto;
@@ -232,6 +235,13 @@ div.container{
     flex-direction: column;
     align-items: center;
 }
+
+
+
+
+
+
+
 /* HTML */
 html{}
 /* HTML */

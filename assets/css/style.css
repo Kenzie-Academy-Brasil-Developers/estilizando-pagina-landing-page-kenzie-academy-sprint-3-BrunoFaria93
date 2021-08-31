@@ -69,10 +69,8 @@ div.container{
 }
 
 
-
-
-
 /* GERAL */
+
 .secaoDestaque{
      padding: 20px;
      color:var(--letra);
@@ -135,6 +133,7 @@ div.container{
     
 }
 
+<<<<<<< HEAD
 .flex-col-js{
     
      align-items: center;
@@ -158,9 +157,12 @@ div.container{
 }
 .flex-col-js li{
      padding-bottom: 5px;
+=======
+.hidden{
+    display: none;
+>>>>>>> 660635e0e37a07de0cae77a5f601585cccad225d
 }
 
-  
 /* HTML */
 html{}
 /* HTML */
@@ -170,7 +172,74 @@ body{}
 /* BODY */
   
 /* HEADER */
-header{}
+.topo{
+    background-color: #00043e;
+    color: white;
+    margin-top: 100px;
+    width: 100vw;
+}
+.large-container{
+    display: flex;
+    width: 100vw;
+    height: 20vh;
+}
+.large-container .menu{
+
+}
+.large-container figure img{
+    margin: 10px;
+    height: 70px;
+    width: 70px;
+}
+.menu__ul{
+    display: flex;
+}
+.container{
+    display: flex;
+    margin-left: auto;
+    padding: 20px;
+   
+}
+#checkbox-menu{
+    position: absolute;
+    opacity: 0;
+}
+label{
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+}
+label span{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    height: 3px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #818181;
+    transition: 0.25s ease-in-out;
+}
+label span:nth-child(1){
+    top: 0;
+}
+label span:nth-child(2){
+    top: 8px;
+}
+label span:nth-child(3){
+    top: 16px;
+}
+#checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+}
+#checkbox-menu:checked + label span:nth-child(2){
+    opacity: 0;
+}
+#checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top: 8px;
+}
 /* HEADER */
   
 /* FOOTER */
@@ -198,8 +267,6 @@ main{}
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {
        
-
-
 
     }
   

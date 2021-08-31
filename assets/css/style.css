@@ -29,7 +29,11 @@ family=Lato -> Títulos, textos
 /* FONTS */
 
 /* VARIÁVEIS */
-:root{}
+:root{
+    --azul-c:#007aff;
+    --fundo:#00043e;
+    --letra:#FFFFFF ;
+}
   
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
@@ -60,7 +64,77 @@ div.container{
     max-width: 1140px;
     margin:0 auto;
 }
+
+
 /* GERAL */
+
+.secaoDestaque{
+    padding: 20px;
+    color:var(--letra);
+    width: 100vw;
+    height: 40vh;
+    background-color:var(--fundo);
+}
+
+.secaoDestaque h2{
+    
+    font-size: 43px;
+    text-align: center;
+    margin-left: 20px;
+
+}
+
+.secaoDestaque p{
+    padding: 10px;
+    text-align: center;
+    font-size: 21px;
+}
+
+.secaoDestaqueFormulario{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+
+    
+}
+
+.secaoDestaqueFormulario input{
+    padding: 15px;
+    width: 50vw;
+    height: 4vh;
+    border:none;
+   
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    align-items: stretch;
+    border-right: none;
+    height: 38px;
+    
+    
+}
+
+
+
+.secaoDestaqueFormulario button{
+    
+    color: var(--letra);
+    background-color: var(--azul-c) ;
+    border: none ;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-size: 14px;
+    border-left: none;
+    height: 38px;
+    
+
+}
+
+
+.hidden{
+    display: none;
+}
+
 /* HTML */
 html{}
 /* HTML */
@@ -68,7 +142,48 @@ html{}
 /* BODY */
 body{}
 /* BODY */
-  
+.secaoSobre .flex .flex-col {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+.secaoSobre .flex .flex-col h2{
+    font-size: 24px;
+    text-align: center;
+    margin: 30px
+}
+.secaoSobre .flex .flex-col p{
+    font-size: 19px;
+    max-width: 250px;
+    margin: 30px;
+    text-align:center;
+}
+.secaoSobre .flex .flex-col span{
+    font-size: 1em;
+    max-width: 200px;
+    margin: 30px;
+    text-align:center;
+    color: #818181;
+}
+.secaoSobre .flex .flex-col button{
+    border: 1px solid #81818177;
+    border-radius: 4px;
+    padding: 15px 0px;
+    width: 200px;
+    margin: 0 auto;
+    background-color: #fff;
+
+}
+.flex-col figure{
+    width: 140px;
+    margin: 0 auto;
+}
+.flex-col figure img{
+    width: 140px;
+}
+figure figcaption{
+    display: none;
+}
 /* HEADER */
 .topo{
     background-color: #00043e;
@@ -162,7 +277,6 @@ main{}
   
 
 /* MEDIA QUERIES */
-
     @media screen and (min-width: 400px) {}
   
     @media screen and (min-width: 800px) {}

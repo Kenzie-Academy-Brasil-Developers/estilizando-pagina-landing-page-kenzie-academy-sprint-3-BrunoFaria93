@@ -93,7 +93,7 @@ div.container{
 /* GERAL */
 
 .secaoDestaque{
-     padding: 20px;
+    
      color:var(--letra);
      width: 100vw;
      height: 40vh;
@@ -121,7 +121,7 @@ div.container{
 .secaoDestaqueFormulario input{
 
     padding: 15px;
-    width: 70vw;
+    width: 60vw;
     height: 4vh;
     border:none;
     border-top-left-radius: 6px;
@@ -188,6 +188,50 @@ div.container{
 .flex-col-js li{
      padding-bottom: 5px;
 
+}
+
+.secaoCursos{
+    display: flex;
+}
+
+.secaoCursos img{
+    width: 140px;
+    
+
+}
+.secaoCursos article{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.secaoCursos h2{
+     text-align: center;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     
+  
+}
+
+.secaoCursos p{
+    text-align: center;
+    line-height: 20px;
+    margin-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.secaoCursos ul{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.secaoCursos li{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 /* HTML */
 html{}

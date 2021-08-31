@@ -250,12 +250,14 @@ figure figcaption{
     width: 100vw;
     height: 20vh;
 }
-.large-container .menu{}
 
 .large-container figure img{
     margin: 10px;
     height: 70px;
     width: 70px;
+}
+.menu{
+    display: none;
 }
 .menu__ul{
     display: flex;
@@ -417,5 +419,37 @@ main{}
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {}
   
-    @media screen and (min-width: 800px) {}
+    @media screen and (min-width: 800px) {
+        .topo{
+            margin-top: 0px;
+        }
+        .container{
+           display: none;
+        }
+        .large-container{
+            width: 100%;
+            max-width: 1380px;
+            margin: 0 auto;
+        }
+        .menu{
+            display: flex;
+            margin-left: auto;
+            padding: 20px 0px;
+        }
+        a:link, a:visited{
+            color: var(--letra);
+            text-decoration: none;
+            font-weight: 100;
+        }
+        .menu__ul li{
+            margin: 20px;
+            color: var(--letra);
+        }
+        .large-container figure img{
+            float: left;
+            margin: 10px;
+            height: 70px;
+            width: 70px;
+        }
+    }
 /* MEDIA QUERIES */

@@ -45,7 +45,16 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
      box-sizing: border-box;
      font-family: sans-serif;
      list-style: none;
+
 }
+    figcaption{
+        display: none;
+    }
+/*Deixas as legendas da figure invisiveis*/
+figcaption{
+    display: none;
+}
+
 figcaption{
      display: none;
 }
@@ -84,7 +93,7 @@ div.container{
 /* GERAL */
 
 .secaoDestaque{
-     padding: 20px;
+    
      color:var(--letra);
      width: 100vw;
      height: 40vh;
@@ -112,7 +121,7 @@ div.container{
 .secaoDestaqueFormulario input{
 
     padding: 15px;
-    width: 70vw;
+    width: 60vw;
     height: 4vh;
     border:none;
     border-top-left-radius: 6px;
@@ -152,6 +161,7 @@ div.container{
      flex-direction: column;
      background-color: #818181;
      padding-bottom: -20px;
+
 }
 .flex-col-js h2{
      text-align: center;
@@ -160,6 +170,15 @@ div.container{
      
      padding-bottom: 50px;
 }
+
+.flex-col-js h2{
+     text-align: center;
+     width: 200px;
+     display: flex;
+     
+     padding-bottom: 50px;
+}
+
 .flex-col-js ul{
      list-style: disc ;
      width: 200px;
@@ -171,33 +190,58 @@ div.container{
 
 }
 
+
+
+
 .secaoCursos{
-     display: flex;
-     margin: 0 auto;
+    display: flex;
 }
 
 .secaoCursos img{
-     width: 200px;
+    width: 140px;
+    
 
 }
 .secaoCursos article{
-    
-
-}
-
-.secaoCursos ul{
-    
+    display: flex;
+    flex-direction: column;
     
 }
+
 .secaoCursos h2{
-    
-    
-} 
+     text-align: center;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     
+  
+}
 
 .secaoCursos p{
+    text-align: center;
+    line-height: 20px;
+    margin-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.secaoCursos ul{
+    display: flex;
+    flex-direction: column;
     
     
 }
+.secaoCursos li{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+
+
+
+
 
 /* HTML */
 html{}
@@ -206,10 +250,51 @@ html{}
 /* BODY */
 body{}
 /* BODY */
-  
+.secaoSobre .flex .flex-col {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+.secaoSobre .flex .flex-col h2{
+    font-size: 24px;
+    text-align: center;
+    margin: 30px
+}
+.secaoSobre .flex .flex-col p{
+    font-size: 19px;
+    max-width: 250px;
+    margin: 30px;
+    text-align:center;
+}
+.secaoSobre .flex .flex-col span{
+    font-size: 1em;
+    max-width: 200px;
+    margin: 30px;
+    text-align:center;
+    color: #818181;
+}
+.secaoSobre .flex .flex-col button{
+    border: 1px solid #81818177;
+    border-radius: 4px;
+    padding: 15px 0px;
+    width: 200px;
+    margin: 0 auto;
+    background-color: #fff;
+
+}
+.flex-col figure{
+    width: 140px;
+    margin: 0 auto;
+}
+.flex-col figure img{
+    width: 140px;
+}
+figure figcaption{
+    display: none;
+}
 /* HEADER */
 .topo{
-    background-color: #00043e;
+    background-color: var(--fundo);
     color: white;
     margin-top:100px;
     width:100vw;
@@ -219,9 +304,8 @@ body{}
     width: 100vw;
     height: 20vh;
 }
-.large-container .menu{
+.large-container .menu{}
 
-}
 .large-container figure img{
     margin: 10px;
     height: 70px;
@@ -276,6 +360,38 @@ label span:nth-child(3){
     transform: rotate(45deg);
     top: 8px;
 }
+/* Secao Calendario */
+.secaoCalendar{
+    margin: 10px;
+    margin-top: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+.secaoCalendar h2{
+
+    margin-bottom: 10px;
+}
+.secaoCalendar p{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.calendario{
+    
+    width: 200px;
+    border: 1px solid black;
+}
+.calendario-data{
+    padding: 0px 0px;
+}
+.calendario li span{
+    padding: 0px 0px;
+    background-color: var(--fundo);
+    color:var(--letra);
+}
+.calendario-data-rodape span{
+    
+}
+
 /* HEADER */
   
 /* FOOTER */
@@ -301,11 +417,7 @@ main{}
   
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {
-       
-
-    }
+    @media screen and (min-width: 400px) {}
   
     @media screen and (min-width: 800px) {}
 /* MEDIA QUERIES */
-

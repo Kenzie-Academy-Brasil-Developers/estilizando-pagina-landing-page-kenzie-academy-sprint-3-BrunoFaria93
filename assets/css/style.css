@@ -68,6 +68,7 @@ img{
 }
 div.flex{
      display: flex;
+     flex-direction: column;
 }
 div.full-container{
      width: 100%;
@@ -236,10 +237,34 @@ div.container{
     align-items: center;
 }
 
+.flex-col-contato{
+    display: flex;
+    margin: 0 auto;
+    
+}
 
+.secaoContato-informacoes{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 50px;
+}
 
+.secaoContato-informacoes p{
+    padding: 10px;
+    width: 220px;
+    margin: 0 auto;
+    margin-left: 15px;
+    
+    
+}
 
-
+.secaoContato{
+    margin: 0 auto;
+    
+}
 
 
 /* HTML */

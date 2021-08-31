@@ -151,7 +151,6 @@ div.container{
      width: 140px;
      padding-top: 15vh;
      padding-bottom: 20px;
-    
 }
 
 
@@ -274,6 +273,9 @@ html{}
 /* BODY */
 body{}
 /* BODY */
+
+/* Secao Sobre */
+
 .secaoSobre .flex .flex-col {
     display: flex;
     flex-direction: column;
@@ -498,6 +500,9 @@ main{}
     @media screen and (min-width: 400px) {}
   
     @media screen and (min-width: 800px) {
+
+        /* HEADER */
+
         .topo{
             margin-top: 0px;
         }
@@ -505,9 +510,8 @@ main{}
            display: none;
         }
         .large-container{
-            width: 100%;
+            height: auto;
             max-width: 1380px;
-            margin: 0 auto;
         }
         .menu{
             display: flex;
@@ -523,11 +527,70 @@ main{}
             margin: 20px;
             color: var(--letra);
         }
-        .large-container figure img{
-            float: left;
-            margin: 10px;
-            height: 70px;
-            width: 70px;
+
+        /* SECAO DESTAQUE */
+
+        .secaoDestaque{
+            background-color: transparent;
+            background-image: url('../../assets/img/background-destaque.webp');
+        }
+        .secaoDestaqueFormulario input{
+            width: 20vw;
+        }
+
+        .secaoDestaque h2{
+            margin-top: 50px;
+        }
+
+        /* SECAO SOBRE */
+        .secaoSobre{
+            padding: 0px 0px;
+            width: 100vw;
+        }
+        .flex{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .secaoSobre .flex .flex-col h2{
+            text-align: left;
+            margin-top: 50px;
+            margin-right: auto;
+            padding-left: 140px;
+        }
+        .secaoSobre .flex .flex-col p{
+            font-size: 19px;
+            max-width: 500px;
+            margin-left: 170px;
+            text-align: left;
+        } 
+        .secaoSobre .flex .flex-col span{
+          
+            max-width: 500px;
+            margin-left: 170px;
+            text-align: left;
+            color: #818181;
+        }
+        .secaoSobre .flex .flex-col button{
+            width: 100px;
+            margin-left: 170px;     
+            margin-bottom: 50px;   
+        }
+        .secaoSobre .flex .flex-col {
+            padding: 0px 170px;
+            margin: 0;
+            width: 50%;
+        }
+        .flex-col figure{
+            margin-right: 350px;
+            width: 50%;
+        }
+        .flex-col figure img{
+            width: 25vw;
+            padding: 70px 0px;
+        }
+        .flex-col-js{
+            width: 50%;
         }
     }
 /* MEDIA QUERIES */

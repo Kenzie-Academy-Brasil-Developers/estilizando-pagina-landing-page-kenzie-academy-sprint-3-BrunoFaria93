@@ -92,7 +92,6 @@ h2{
 }
 
 .secaoDestaque{
-    
      color:var(--letra);
      width: 100vw;
      height: 40vh;
@@ -141,6 +140,10 @@ h2{
     font-size: 14px;
     border-left: none;
     height: 38px;
+}
+input[type="submit"]:hover{
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .flex-col-js img{
@@ -375,7 +378,7 @@ figure figcaption{
 .topo{
     background-color: var(--fundo);
     color: white;
-    margin-top:100px;
+    margin-top: 30px;
     width:100vw;
 }
 .large-container{
@@ -496,7 +499,7 @@ label span:nth-child(3){
 }
 
 .calendario-data-rodape button{
-    font-size: 32px;
+    font-size: 18px;
     border: none;
     width: 90%;
     height: 50px;
@@ -504,6 +507,10 @@ label span:nth-child(3){
     color: var(--letra);
     background-color: var(--azul-c);
     border-radius: 5px;
+}
+.calendario li button:hover{
+    background-color: #007bff86;
+    cursor: pointer;
 }
 .secaoDestaqueFormulario button:hover{
     background-color: #007bff86;
@@ -560,7 +567,8 @@ main{}
         /* HEADER */
         
         .topo{
-            margin-top: 0px;
+            width: 100vw;
+            margin: 0px;
         }
         .container{
            display: none;
@@ -591,12 +599,11 @@ main{}
         /* SECAO DESTAQUE */
 
         .secaoDestaque{
-            height: 70vh;
+            height: 60vh;
+            width: 100vw;
+            margin-top: z;
             background-color: transparent;
             background-image: url('../../assets/img/background-destaque.webp');
-            background-position: center;
-            background-position-x: -400px;
-            background-position-y: -100px;
         }
         .secaoDestaqueFormulario input{
             width: 20vw;
@@ -604,7 +611,7 @@ main{}
 
         .secaoDestaque h2{
             font-size: 63px;
-            margin-top: 50px;
+            margin-top: 90px;
         }
         .secaoDestaque p{
             font-size: 21px;
@@ -756,7 +763,7 @@ main{}
         }
         
         .calendario-data-rodape button{
-            font-size: 32px;
+            font-size: 20px;
             border: none;
             width: 30%;
             height: 55px;
@@ -783,6 +790,11 @@ main{}
             margin-top: 0px;
             display: inline-block;
             text-align: center;
+            margin-bottom: 30px;
+        }
+        footer a:link{
+            text-decoration: none;
+            color: var(--azul-c);
         }
         .up_arrow{
             border: none;

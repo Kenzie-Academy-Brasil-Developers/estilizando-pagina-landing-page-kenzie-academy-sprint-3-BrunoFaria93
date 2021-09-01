@@ -381,6 +381,7 @@ figure figcaption{
     background-color: var(--fundo);
     color: white;
     width:100vw;
+    max-width: 1324px;
 }
 .large-container{
     display: flex;
@@ -458,7 +459,7 @@ label span:nth-child(3){
     margin: 0 auto;
 }
 .calendario{
-    max-width: 250px;
+    max-width: 350px;
 }
 .calendario li{
     border: 1px solid black;
@@ -494,7 +495,7 @@ label span:nth-child(3){
     border-top: 1px solid #81818177;
 }
 .calendario-data-rodape span{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 32px;
     color: #818181;
 }
@@ -502,7 +503,7 @@ label span:nth-child(3){
 .calendario-data-rodape button{
     font-size: 18px;
     border: none;
-    width: 90%;
+    width: 80%;
     height: 50px;
     margin: 0 auto;
     color: var(--letra);
@@ -522,6 +523,7 @@ label span:nth-child(3){
   
 /* FOOTER */
 footer{
+    width: 98.6vw;
     height: 100px;
     display: flex;
     align-items: center;
@@ -568,6 +570,7 @@ main{}
         .topo{
             width: 100vw;
             margin: 0px;
+            max-width: 100%;
         }
         .container{
            display: none;
@@ -626,28 +629,30 @@ main{}
             flex-wrap: wrap;
             flex-direction: row;
         }
+     
         .secaoSobre .flex .flex-col h2{
             text-align: left;
-            margin-top: 50px;
+            margin-top: 100px;
+            margin-left: 129px;
             margin-right: auto;
             padding-left: 140px;
         }
         .secaoSobre .flex .flex-col p{
             font-size: 19px;
-            max-width: 500px;
-            margin-left: 170px;
+            max-width: 600px;
+            margin-left: 270px;
             text-align: left;
         } 
         .secaoSobre .flex .flex-col span{
           
             max-width: 500px;
-            margin-left: 170px;
+            margin-left: 270px;
             text-align: left;
             color: #818181;
         }
         .secaoSobre .flex .flex-col button{
             width: 100px;
-            margin-left: 170px;     
+            margin-left: 270px;     
             margin-bottom: 50px;   
         }
         .secaoSobre .flex .flex-col button:hover{
@@ -655,7 +660,7 @@ main{}
             cursor: pointer;
         }
         .secaoSobre .flex .flex-col {
-            padding: 0px 170px;
+            padding: 0px 0px;
             margin: 0;
             width: 50%;
         }
@@ -672,15 +677,18 @@ main{}
             flex-direction: column;
             align-items: flex-start;
             justify-content: flex-start;
-            padding: 20px
+            padding: 20px;
+            margin-bottom: 50px;
         }
         .flex-col-js figure img{
+            margin-top: 50px;
             width: 13vw;
             padding: 40px;
             margin-left: 250px;
+            margin-bottom: 50px;
         }
         .flex-col-js h2{
-            margin-top: 50px;
+            margin-top: 100px;
             text-align: center;
             width: 462px;
             display: flex;
@@ -720,15 +728,15 @@ main{}
         }
         .calendario{
             display: flex;
+            margin-left: 320px;
             justify-content: space-between;
-            margin-left: 170px;
+        
             }
         .calendario li{
             border: 1px solid black;
             flex-direction: column;
             justify-content: center;
-            
-            
+            width: 350px;
         }
         .calendario h3{
             font-size: 19px;
@@ -744,7 +752,7 @@ main{}
         }
         .calendario-data{
             font-size: 36px;
-            padding: 30px 180px;
+            padding: 30px 135px;
             background-color: var(--fundo);
             color: var(--letra);
         }
@@ -793,7 +801,7 @@ main{}
 
         footer{
             height: 200px;
-            width: 100vw;
+            width: 98.6vw;
             display: flex;
             flex-direction: column-reverse;
             align-items: center;

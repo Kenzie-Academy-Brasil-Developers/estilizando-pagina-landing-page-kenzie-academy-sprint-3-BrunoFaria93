@@ -47,17 +47,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
      list-style: none;
 
 }
-    figcaption{
-        display: none;
-    }
-/*Deixas as legendas da figure invisiveis*/
-figcaption{
-    display: none;
-}
 
-figcaption{
-     display: none;
-}
 /*Deixas as legendas da figure invisiveis*/
 figcaption{
     display: none;
@@ -92,6 +82,13 @@ div.container{
 
 
 /* GERAL */
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+h2{
+    font-family: 'Montserrat';
+}
 
 .secaoDestaque{
     
@@ -453,9 +450,9 @@ label span:nth-child(3){
     background-color: var(--azul-c);
     border-radius: 5px;
 }
-button:hover{
-    background-color: #007bff86
-    ;
+.secaoDestaqueFormulario button:hover{
+    background-color: #007bff86;
+    cursor: pointer;
 }
 
 /* HEADER */
@@ -474,7 +471,6 @@ footer p {
     background-color: transparent;
     height: 50px;
     width: 50px;
-    color: var(--azul-c);
     margin: 0 auto;
     padding: 14px 18px
 }
@@ -523,13 +519,14 @@ main{}
             margin-left: auto;
             padding: 20px 0px;
         }
-        a:link, a:visited{
+        .menu__ul li a:link, a:visited{
             color: var(--letra);
             text-decoration: none;
             font-weight: 100;
         }
         a:hover{
             text-shadow: 1px 1px 1px rgb(252, 241, 199);
+            cursor: pointer;
         }
         .menu__ul li{
             margin: 20px;
@@ -547,7 +544,11 @@ main{}
         }
 
         .secaoDestaque h2{
+            font-size: 63px;
             margin-top: 50px;
+        }
+        .secaoDestaque p{
+            font-size: 21px;
         }
 
         /* SECAO SOBRE */
@@ -586,6 +587,7 @@ main{}
         }
         .secaoSobre .flex .flex-col button:hover{
             background-color: #8181812f; 
+            cursor: pointer;
         }
         .secaoSobre .flex .flex-col {
             padding: 0px 170px;
@@ -687,5 +689,29 @@ main{}
             display: flex;
         }
 
+        /* FOOTER */
+
+        footer{
+            height: 200px;
+            width: 100vw;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            margin-bottom: 50px;
+            color: #818181;
+        }
+        footer p {
+            margin-top: 0px;
+            display: inline-block;
+            text-align: center;
+        }
+        .up_arrow{
+            border: none;
+            background-color: transparent;
+            height: 70px;
+            width: 70px;
+            margin: 0 auto;
+            padding: 14px 18px
+        }
     }
 /* MEDIA QUERIES */

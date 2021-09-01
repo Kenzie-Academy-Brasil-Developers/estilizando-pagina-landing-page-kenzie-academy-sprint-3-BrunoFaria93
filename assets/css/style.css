@@ -246,7 +246,9 @@ input[type="submit"]:hover{
      padding-top: 50px;
 }
 .title-contact{
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 77px;
     margin-top: 50px;
 }
 
@@ -829,7 +831,7 @@ main{}
 
 
             
-        }
+       
 
         .box-curso{
             display: flex;
@@ -846,6 +848,9 @@ main{}
             display: flex;
             justify-content: space-around;
             margin: 0 auto;
+            margin-left: 19vw;
+            margin-top: 40px;
+        
         }
         div.flex{
         
@@ -857,7 +862,7 @@ main{}
         .form-input-model input{
             flex-flow: row wrap;
             border: none;
-            width: 300px;
+            width: 19vw;
             border-radius: 5px;
             height: 30px ;
             padding: 10px;
@@ -875,30 +880,35 @@ main{}
            
         }
         .formulario{
-            width: 100vw;
-            display: flex;
+            width: 40vw;
+            
             flex-flow:  row wrap;
             justify-content: space-between;
         }
         
         .botao-desktop{
             display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: flex-end;
         }
         .areaTxt{
             padding: 10px;
             border-radius: 5px;
-            width: 660px;
+            width: 100%;
             height: 100px;
         
         }
         
         .enviar{
-            margin-left: 600px;
-        }
-        .title-contact{
-            margin-left: 250px;
-            margin-top: 40px;
+           float: right;
         }
         
-    
+    .pai-input{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    }
 /* MEDIA QUERIES */

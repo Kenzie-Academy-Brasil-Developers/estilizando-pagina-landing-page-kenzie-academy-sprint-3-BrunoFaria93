@@ -234,6 +234,10 @@ div.container{
      margin: 0 auto;
      padding-top: 50px;
 }
+.title-contact{
+    text-align: center;
+    margin-top: 50px;
+}
 
 .secaoContato-informacoes p{
      padding: 10px;
@@ -753,8 +757,96 @@ main{}
         .calendario_topo{
             width: 100vw;
             display: flex;
+
+        }
+            /* Seção curso*/
+
+        
+
+        .secaoCursos ul{
+            padding: 20px;
+            flex-direction: row ;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+        }
+
+        .secaoCursos li{
+            width: 33%;
+
+            
+        }
+
+        .box-curso{
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+
+            
         }
 
 
+        /*Seção Contato*/
+
+        .title-contact{
+            display: flex;
+            justify-content: space-around;
+            margin: 0 auto;
+        }
+        div.flex{
+        
+            flex-direction: row;
+            align-items: baseline;
+            
+        }
+
+        .form-input-model input{
+            flex-flow: row wrap;
+            border: none;
+            width: 300px;
+            border-radius: 5px;
+            height: 30px ;
+            padding: 10px;
+     }
+        
+        .areaTxt{
+            width: 100vw;
+
+        }
+        .flex-col-contato{
+
+            width: 40%;
+            margin: 0 auto;
+            padding-bottom: 50px;
+           
+        }
+        .formulario{
+            width: 100vw;
+            display: flex;
+            flex-flow:  row wrap;
+            justify-content: space-between;
+        }
+        .enviar{
+            
+        }
+        .botao-desktop{
+            display: flex;
+        }
+        .areaTxt{
+            padding: 10px;
+            border-radius: 5px;
+            width: 660px;
+            height: 100px;
+        
+        }
+        
+        .enviar{
+            margin-left: 600px;
+        }
+        .title-contact{
+            margin-left: 250px;
+            margin-top: 40px;
+        }
+        
     }
 /* MEDIA QUERIES */

@@ -51,18 +51,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     figcaption{
         display: none;
     }
-/*Deixas as legendas da figure invisiveis*/
-figcaption{
-    display: none;
-}
 
-figcaption{
-     display: none;
-}
-/*Deixas as legendas da figure invisiveis*/
-figcaption{
-    display: none;
-}
 
 img{
      max-width: 800px;
@@ -134,8 +123,6 @@ div.container{
 }
 
 
-
-
 .secaoDestaqueFormulario button{
     
     color: var(--letra);
@@ -186,26 +173,27 @@ div.container{
      color: #303030;
 }
 .flex-col-js li{
-    font-size: 19px;
-    padding-bottom: 5px;
+     font-size: 19px;
+     padding-bottom: 5px;
 
 }
 
 .secaoCursos{
-    
-    display: flex;
-    margin: 0 auto;
+     width: 100vw;
+     display: flex;
+     margin: 0 auto;
+     justify-content: center;
 }
 
 .secaoCursos img{
-    width: 140px;
+     width: 140px;
     
 
 }
 .secaoCursos article{
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
+    
+     display: flex;
+     flex-direction: column;
     
 }
 
@@ -218,80 +206,81 @@ div.container{
 }
 
 .secaoCursos p{
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+     text-align: center;
+     padding-top: 20px;
+     padding-bottom: 20px;
     
 }
 .secaoCursos ul{
-    display: flex;
+     display: flex;
+     flex-direction: column;
     
     
     
 }
 .secaoCursos li{
     
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
 }
 
 
 .secaoContato-informacoes{
    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    padding-top: 50px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 0 auto;
+     padding-top: 50px;
 }
 
 .secaoContato-informacoes p{
-    padding: 10px;
-    margin: 0 auto;
-    margin-left: 10px;
+     padding: 10px;
+     margin: 0 auto;
+    
 }
 
 .secaoContato-informacoes h2{
-    text-transform: uppercase;
+     text-transform: uppercase;
 
 }
 .paragrafo{
-    width: 220px;
-    color: var(--letra-cinza);
+     width: 220px;
+     color: var(--letra-cinza);
 }
 
 .secaoContato a:link{
-    color:var(--letra-cinza);
+     color:var(--letra-cinza);
 }
 
 .secaoContato a:visited{
-    color:var(--letra-cinza);
+     color:var(--letra-cinza);
 }
 .secaoContato i{
-    color: var(--letra-cinza);
+     color: var(--letra-cinza);
     
-    margin: 10px 10px ;
+     margin: 10px 10px ;
     
 }
 
 .secaoContato{
-    margin: 0 auto;
-    width: 100vw;
-    background-color: #818181;
-    margin-top: 80px;
+     margin: 0 auto;
+     width: 100vw;
+     background-color: #818181;
+     margin-top: 80px;
 }
 
 .flex-col-contato{
 
-    display: flex;
-    margin: 0 auto;
-    padding-bottom: 50px;
+     display: flex;
+     margin: 0 auto;
+     padding-bottom: 50px;
     
 }
 .flex-col-contato label{
     
-    display: none;
+     display: none;
 }
 
 .form-input-model{
@@ -306,19 +295,19 @@ div.container{
         padding: 10px;
 }
 .areaTxt{
-    padding: 10px;
-    border-radius: 5px;
-    width: 201px;
-    height: 100px;
+     padding: 10px;
+     border-radius: 5px;
+     width: 201px;
+     height: 100px;
 
 }
 
 .enviar{
-    border: none;
-    border-radius: 5px;
-    float: right;
-    width: 50px;
-    height: 35px;
+     border: none;
+     border-radius: 5px;
+     float: right;
+     width: 50px;
+     height: 35px;
 }
 
 

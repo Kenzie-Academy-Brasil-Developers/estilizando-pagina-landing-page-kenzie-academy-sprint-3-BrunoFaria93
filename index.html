@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="icon-96x96.webp">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Landing Page Kenzie Academy</title>
@@ -124,7 +128,7 @@
     <section class="secaoCursos">
 
       <article>
-
+        
         <h2>COURSES</h2>
         <p>What we offer</p>
 
@@ -229,12 +233,12 @@
             
             <h2>Contact</h2>
 
-            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <div class="paragrafo"><p>Contact us and we'll get back to you within 24 hours.</p></div>
             
             <ul>
-              <li><a href="#">Chicago, US</a> </li>
-              <li><a href="tel:001515151515">+00 1515151515</a></li>
-              <li><a href="malito:myemail@something.com">myemail@something.com</a></li>
+              <li><i class="fas fa-map-marker-alt"></i><a href="#">Chicago, US</a> </li>
+              <li><i class="fas fa-mobile-alt"></i><a href="tel:001515151515">+00 1515151515</a></li>
+              <li><i class="fas fa-envelope"></i><a href="malito:myemail@something.com">myemail@something.com</a></li>
             </ul>
 
           </div>
@@ -260,10 +264,10 @@
 
             <div class="form-input-model">
               <label for="mensagem">E-mail</label>
-              <textarea name="mensagem" id="mensagem"></textarea>
+              <textarea class="areaTxt" name="mensagem" id="mensagem" placeholder="Comment"></textarea>
             </div>
 
-            <input type="submit" value="Send">
+            <input class="enviar" type="submit" value="Send" >
 
           </form>
 
@@ -278,7 +282,7 @@
   <footer>
     <p>Kenzie Academy - <a href="kenzie.com.br">kenzie.com.br</a></p>
       <a href="#top">
-        <button class='up_arrow'><i class="fas fa-chevron-up"></i> 
+        <button class='up_arrow'><i class="fas fa-chevron-up" style='color: var(--azul-c);'></i>
       </a>
     </button>
   </footer>

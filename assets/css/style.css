@@ -33,6 +33,7 @@ family=Lato -> Títulos, textos
     --azul-c:#007aff;
     --fundo:#00043e;
     --letra:#FFFFFF ;
+    --letra-cinza:#d3cdcd;
 }
   
 main{
@@ -47,17 +48,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
      list-style: none;
 
 }
-    figcaption{
-        display: none;
-    }
-/*Deixas as legendas da figure invisiveis*/
-figcaption{
-    display: none;
-}
 
-figcaption{
-     display: none;
-}
 /*Deixas as legendas da figure invisiveis*/
 figcaption{
     display: none;
@@ -92,6 +83,13 @@ div.container{
 
 
 /* GERAL */
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+h2{
+    font-family: 'Montserrat';
+}
 
 .secaoDestaque{
     
@@ -131,8 +129,6 @@ div.container{
     border-right: none;
     height: 38px;  
 }
-
-
 
 
 .secaoDestaqueFormulario button{
@@ -175,7 +171,6 @@ div.container{
      text-align: center;
      width: 200px;
      display: flex;
-     
      padding-bottom: 50px;
 }
 
@@ -186,27 +181,27 @@ div.container{
      color: #303030;
 }
 .flex-col-js li{
-    font-size: 19px;
-    padding-bottom: 5px;
+     font-size: 19px;
+     padding-bottom: 5px;
 
 }
 
-
-
-
 .secaoCursos{
-    display: flex;
-    margin: 0 auto;
+     width: 100vw;
+     display: flex;
+     margin: 0 auto;
+     justify-content: center;
 }
 
 .secaoCursos img{
-    width: 140px;
+     width: 140px;
     
 
 }
 .secaoCursos article{
-    display: flex;
-    flex-direction: column;
+    
+     display: flex;
+     flex-direction: column;
     
 }
 
@@ -219,51 +214,108 @@ div.container{
 }
 
 .secaoCursos p{
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+     text-align: center;
+     padding-top: 20px;
+     padding-bottom: 20px;
     
 }
 .secaoCursos ul{
-    display: flex;
-    flex-direction: column;
+     display: flex;
+     flex-direction: column;
+    
     
     
 }
 .secaoCursos li{
     
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
 }
 
-.flex-col-contato{
-    display: flex;
-    margin: 0 auto;
-    
-}
 
 .secaoContato-informacoes{
    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    padding-top: 50px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 0 auto;
+     padding-top: 50px;
 }
 
 .secaoContato-informacoes p{
-    padding: 10px;
-    width: 220px;
-    margin: 0 auto;
-    margin-left: 15px;
+     padding: 10px;
+     margin: 0 auto;
     
+}
+
+.secaoContato-informacoes h2{
+     text-transform: uppercase;
+
+}
+.paragrafo{
+     width: 220px;
+     color: var(--letra-cinza);
+}
+
+.secaoContato a:link{
+     color:var(--letra-cinza);
+}
+
+.secaoContato a:visited{
+     color:var(--letra-cinza);
+}
+.secaoContato i{
+     color: var(--letra-cinza);
+    
+     margin: 10px 10px ;
     
 }
 
 .secaoContato{
-    margin: 0 auto;
+     margin: 0 auto;
+     width: 100vw;
+     background-color: #818181;
+     margin-top: 80px;
+}
+
+.flex-col-contato{
+
+     display: flex;
+     margin: 0 auto;
+     padding-bottom: 50px;
     
+}
+.flex-col-contato label{
+    
+     display: none;
+}
+
+.form-input-model{
+        border-radius: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;  
+}
+.form-input-model input{
+        border: none;
+        border-radius: 5px;
+        height: 30px ;
+        padding: 10px;
+}
+.areaTxt{
+     padding: 10px;
+     border-radius: 5px;
+     width: 201px;
+     height: 100px;
+
+}
+
+.enviar{
+     border: none;
+     border-radius: 5px;
+     float: right;
+     width: 50px;
+     height: 35px;
 }
 
 
@@ -453,9 +505,9 @@ label span:nth-child(3){
     background-color: var(--azul-c);
     border-radius: 5px;
 }
-button:hover{
-    background-color: #007bff86
-    ;
+.secaoDestaqueFormulario button:hover{
+    background-color: #007bff86;
+    cursor: pointer;
 }
 
 /* HEADER */
@@ -474,7 +526,6 @@ footer p {
     background-color: transparent;
     height: 50px;
     width: 50px;
-    color: var(--azul-c);
     margin: 0 auto;
     padding: 14px 18px
 }
@@ -505,7 +556,7 @@ main{}
     @media screen and (min-width: 800px) {
         
         /* HEADER */
-
+        
         .topo{
             margin-top: 0px;
         }
@@ -521,13 +572,14 @@ main{}
             margin-left: auto;
             padding: 20px 0px;
         }
-        a:link, a:visited{
+        .menu__ul li a:link, a:visited{
             color: var(--letra);
             text-decoration: none;
             font-weight: 100;
         }
         a:hover{
             text-shadow: 1px 1px 1px rgb(252, 241, 199);
+            cursor: pointer;
         }
         .menu__ul li{
             margin: 20px;
@@ -537,15 +589,23 @@ main{}
         /* SECAO DESTAQUE */
 
         .secaoDestaque{
+            height: 70vh;
             background-color: transparent;
             background-image: url('../../assets/img/background-destaque.webp');
+            background-position: center;
+            background-position-x: -400px;
+            background-position-y: -100px;
         }
         .secaoDestaqueFormulario input{
             width: 20vw;
         }
 
         .secaoDestaque h2{
+            font-size: 63px;
             margin-top: 50px;
+        }
+        .secaoDestaque p{
+            font-size: 21px;
         }
 
         /* SECAO SOBRE */
@@ -584,6 +644,7 @@ main{}
         }
         .secaoSobre .flex .flex-col button:hover{
             background-color: #8181812f; 
+            cursor: pointer;
         }
         .secaoSobre .flex .flex-col {
             padding: 0px 170px;
@@ -623,6 +684,26 @@ main{}
        .flex-col-js li{
         width: 617px;
         }
+
+
+        .secaoContato-informacoes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            padding-top: 50px;
+            width: 50vw;
+            
+        }
+
+        .flex-col{
+            display: flex;
+            float: left;
+        }
+
+
+         
+
         /* CALENDARIO */
 
         .secaoCalendar{
@@ -683,6 +764,31 @@ main{}
         .calendario_topo{
             width: 100vw;
             display: flex;
+        }
+
+        /* FOOTER */
+
+        footer{
+            height: 200px;
+            width: 100vw;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            margin-bottom: 50px;
+            color: #818181;
+        }
+        footer p {
+            margin-top: 0px;
+            display: inline-block;
+            text-align: center;
+        }
+        .up_arrow{
+            border: none;
+            background-color: transparent;
+            height: 70px;
+            width: 70px;
+            margin: 0 auto;
+            padding: 14px 18px
         }
 
     }

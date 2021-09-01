@@ -48,10 +48,11 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
      list-style: none;
 
 }
-    figcaption{
-        display: none;
-    }
 
+/*Deixas as legendas da figure invisiveis*/
+figcaption{
+    display: none;
+}
 
 img{
      max-width: 800px;
@@ -82,9 +83,15 @@ div.container{
 
 
 /* GERAL */
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+h2{
+    font-family: 'Montserrat';
+}
 
 .secaoDestaque{
-    
      color:var(--letra);
      width: 100vw;
      height: 40vh;
@@ -134,9 +141,13 @@ div.container{
     border-left: none;
     height: 38px;
 }
+input[type="submit"]:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
 
 .flex-col-js img{
-     width: 140px;
+     width: 130px;
      padding-top: 15vh;
      padding-bottom: 20px;
 }
@@ -339,30 +350,28 @@ body{}
     font-size: 19px;
     max-width: 250px;
     margin: 30px;
-    text-align:center;
 }
 .secaoSobre .flex .flex-col span{
     font-size: 1em;
     max-width: 200px;
-    margin: 30px;
-    text-align:center;
+    margin: 10px 0px 30px 30px;
     color: #818181;
 }
 .secaoSobre .flex .flex-col button{
     border: 1px solid #818181;
     border-radius: 4px;
     padding: 15px 0px;
-    width: 200px;
+    width: 230px;
     margin: 0 auto;
     background-color: #fff;
 
 }
 .flex-col figure{
-    width: 140px;
+    width: 270px;
     margin: 0 auto;
 }
 .flex-col figure img{
-    width: 140px;
+    width: 270px;
 }
 figure figcaption{
     display: none;
@@ -371,7 +380,6 @@ figure figcaption{
 .topo{
     background-color: var(--fundo);
     color: white;
-    margin-top:100px;
     width:100vw;
 }
 .large-container{
@@ -381,9 +389,9 @@ figure figcaption{
 }
 
 .large-container figure img{
-    margin: 10px;
+    margin: 20px;
     height: 70px;
-    width: 70px;
+    width: 60px;
 }
 .menu{
     display: none;
@@ -492,7 +500,7 @@ label span:nth-child(3){
 }
 
 .calendario-data-rodape button{
-    font-size: 32px;
+    font-size: 18px;
     border: none;
     width: 90%;
     height: 50px;
@@ -501,9 +509,13 @@ label span:nth-child(3){
     background-color: var(--azul-c);
     border-radius: 5px;
 }
-button:hover{
-    background-color: #007bff86
-    ;
+.calendario li button:hover{
+    background-color: #007bff86;
+    cursor: pointer;
+}
+.secaoDestaqueFormulario button:hover{
+    background-color: #007bff86;
+    cursor: pointer;
 }
 
 /* HEADER */
@@ -522,12 +534,9 @@ footer p {
     background-color: transparent;
     height: 50px;
     width: 50px;
-    color: var(--azul-c);
     margin: 0 auto;
     padding: 14px 18px
 }
-
-
 
 /* FOOTER */
 
@@ -553,11 +562,12 @@ main{}
     @media screen and (min-width: 400px) {}
   
     @media screen and (min-width: 800px) {
-
+        
         /* HEADER */
         
         .topo{
-            margin-top: 0px;
+            width: 100vw;
+            margin: 0px;
         }
         .container{
            display: none;
@@ -571,13 +581,14 @@ main{}
             margin-left: auto;
             padding: 20px 0px;
         }
-        a:link, a:visited{
+        .menu__ul li a:link, a:visited{
             color: var(--letra);
             text-decoration: none;
             font-weight: 100;
         }
         a:hover{
             text-shadow: 1px 1px 1px rgb(252, 241, 199);
+            cursor: pointer;
         }
         .menu__ul li{
             margin: 20px;
@@ -587,19 +598,22 @@ main{}
         /* SECAO DESTAQUE */
 
         .secaoDestaque{
-            height: 70vh;
+            height: 60vh;
+            width: 100vw;
+            margin-top: z;
             background-color: transparent;
             background-image: url('../../assets/img/background-destaque.webp');
-            background-position: center;
-            background-position-x: -400px;
-            background-position-y: -100px;
         }
         .secaoDestaqueFormulario input{
             width: 20vw;
         }
 
         .secaoDestaque h2{
-            margin-top: 50px;
+            font-size: 63px;
+            margin-top: 90px;
+        }
+        .secaoDestaque p{
+            font-size: 21px;
         }
 
         /* SECAO SOBRE */
@@ -638,6 +652,7 @@ main{}
         }
         .secaoSobre .flex .flex-col button:hover{
             background-color: #8181812f; 
+            cursor: pointer;
         }
         .secaoSobre .flex .flex-col {
             padding: 0px 170px;
@@ -645,12 +660,12 @@ main{}
             width: 50%;
         }
         .flex-col figure{
-            margin-right: 350px;
+            margin-right: 360px;
             width: 50%;
         }
         .flex-col figure img{
-            width: 25vw;
-            padding: 70px 0px;
+            width: 33vw;
+            padding: 90px 0px;
         }
         .flex-col-js{
             width: 50%;
@@ -747,7 +762,7 @@ main{}
         }
         
         .calendario-data-rodape button{
-            font-size: 32px;
+            font-size: 20px;
             border: none;
             width: 30%;
             height: 55px;
@@ -773,6 +788,37 @@ main{}
 
         .secaoCursos li{
             width: 33%;
+        }
+        /* FOOTER */
+
+        footer{
+            height: 200px;
+            width: 100vw;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            margin-bottom: 50px;
+            color: #818181;
+        }
+        footer p {
+            margin-top: 0px;
+            display: inline-block;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        footer a:link{
+            text-decoration: none;
+            color: var(--azul-c);
+        }
+        .up_arrow{
+            border: none;
+            background-color: transparent;
+            height: 70px;
+            width: 70px;
+            margin: 0 auto;
+            padding: 14px 18px
+        }
+
 
             
         }
@@ -826,9 +872,7 @@ main{}
             flex-flow:  row wrap;
             justify-content: space-between;
         }
-        .enviar{
-            
-        }
+        
         .botao-desktop{
             display: flex;
         }
@@ -848,5 +892,5 @@ main{}
             margin-top: 40px;
         }
         
-    }
+    
 /* MEDIA QUERIES */
